@@ -4,6 +4,8 @@ import { Env } from './Env';
 
 let options = {};
 
+const currEnv = process.env.NODE_ENV;
+
 if (Env.LOGTAIL_SOURCE_TOKEN) {
   options = {
     transport: {
@@ -13,12 +15,15 @@ if (Env.LOGTAIL_SOURCE_TOKEN) {
   };
 } else {
   options = {
-    transport: {
-      target: 'pino-pretty',
-      options: {
-        colorize: true,
-      },
-    },
+    transport:
+      currEnv === 'development'
+        ? {
+            target: 'pino-pretty',
+            options: {
+              colorize: true,
+            },
+          }
+        : undefined,
   };
 }
 
