@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/kbventures/Next-js-Boilerplate/compare/v1.0.0...v1.1.0) (2024-05-23)
+
+
+### Features
+
+* **Russian Language:** russian language ([90fe549](https://github.com/kbventures/Next-js-Boilerplate/commit/90fe549b9efa14107c80feb8cda6ba970eb28541))
+* **Sentry:** sentry for development ([97af61e](https://github.com/kbventures/Next-js-Boilerplate/commit/97af61e0d7839450d65f53abebbdea20e9dd045e))
+
 # 1.0.0 (2024-05-23)
 
 
